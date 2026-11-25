@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ride - RideLoop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="subscription-brand">
+            <img src="images/Routiva Road Loop Logo.png  " alt="Routiva Logo" class="logo">
+        </a>
+
+        <div class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Find a Ride</a></li>
+                <li><a href="subscription.html">Subscriptions</a></li>
+                <li><a href="my-rides.html">My Rides</a></li>
+                <li><a href="about.html">About Us</a></li>
+        </div>
+        <div class="profile-avatar">
+        <img src="https://img.magnific.com/premium-vector/young-man-avatar-character-due-avatar-man-vector-icon-cartoon-illustration_1186924-4438.jpg?semt=ais_hybrid&w=740&q=80" alt="User Avatar"
+        class="profile-avatar">
+        </div>
+    </nav>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+
+        <div class="booking-heading">
+            <h1>Book Your Ride</h1>
+            <p>Complete your details to reserve your seat.</p>
+        </div>
+
+        <div class="booking-layout">
+
+            <!-- Selected Ride Details -->
+            <div class="selected-ride">
+
+                <h2>Selected Ride</h2>
+
+                <div class="driver-info">
+                    <div class="driver-avatar">RP</div>
+
+                    <div>
+                        <h3>Rahul Patel</h3>
+                        <p>Maruti Swift</p>
+                    </div>
+                </div>
+
+                <div class="booking-route">
+
+                    <div class="route-point">
+                        <span class="route-dot"></span>
+                        <div>
+                            <small>FROM</small>
+                            <h3>Ahmedabad</h3>
+                        </div>
+                    </div>
+
+                    <div class="route-line"></div>
+
+                    <div class="route-point">
+                        <span class="route-dot destination-dot"></span>
+                        <div>
+                            <small>TO</small>
+                            <h3>Gandhinagar</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="ride-info-row">
+                    <span>Travel Date</span>
+                    <strong>20 Nov 2026</strong>
+                </div>
+
+                <div class="ride-info-row">
+                    <span>Departure Time</span>
+                    <strong>08:00 AM</strong>
+                </div>
+
+                <div class="ride-info-row">
+                    <span>Price Per Seat</span>
+                    <strong>₹100</strong>
+                </div>
+
+            </div>
+
+            <!-- Booking Form -->
+            <div class="booking-form-container">
+
+                <h2>Passenger Details</h2>
+                <p class="booking-subtitle">
+                    Enter your details below.
+                </p>
+
+                <form id="bookingForm">
+
+                    <div class="form-group">
+                        <label for="passengerName">Full Name</label>
+                        <input type="text"
+                            id="passengerName"
+                            placeholder="Enter your full name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="passengerEmail">Email Address</label>
+                        <input type="email"
+                            id="passengerEmail"
+                            placeholder="Enter your email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="passengerPhone">Phone Number</label>
+                        <input type="tel"
+                            id="passengerPhone"
+                            placeholder="Enter 10-digit mobile number"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookingSeats">Number of Seats</label>
+                        <select id="bookingSeats" required>
+                            <option value="">Select seats</option>
+                            <option value="1">1 Seat</option>
+                            <option value="2">2 Seats</option>
+                            <option value="3">3 Seats</option>
+                            <option value="4">4 Seats</option>
+                        </select>
+                    </div>
+
+                    <div class="fare-summary">
+
+                        <h3>Fare Summary</h3>
+
+                        <div class="fare-row">
+                            <span>Price Per Seat</span>
+                            <span>₹100</span>
+                        </div>
+
+                        <div class="fare-row">
+                            <span>Number of Seats</span>
+                            <span>1</span>
+                        </div>
+
+                        <div class="fare-total">
+                            <span>Total Amount</span>
+                            <strong>₹100</strong>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="confirm-booking-btn">
+                        Confirm Booking
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <a href="rides.html" class="back-home">
+            ← Back to Available Rides
+        </a>
+
+    </section>
+
+</body>
+</html>

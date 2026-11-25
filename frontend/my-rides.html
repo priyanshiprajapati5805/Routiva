@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routivaa - My Rides</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="my-rides-page">
+
+    <!-- Navbar -->
+    <header class="my-rides-navbar">
+
+        <a href="index.html" class="my-rides-brand">
+            <img src="images/Routiva Road Loop Logo.png" alt="Routivaa Logo">
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="search.html">Find Ride</a>
+            <a href="subscription.html">Subscription</a>
+            <a href="my-rides.html" class="active">My Rides</a>
+            <a href="about.html">About Us</a>
+        </nav>
+
+        <div class="profile-avatar">
+            <img src="https://img.magnific.com/premium-vector/young-man-avatar-character-due-avatar-man-vector-icon-cartoon-illustration_1186924-4438.jpg?semt=ais_hybrid&w=740&q=80" alt="User Avatar"
+            class="profile-avatar">
+        </div>
+
+    </header>
+
+    <!-- Page Heading -->
+    <section class="my-rides-heading">
+
+        <p class="my-rides-tag">YOUR JOURNEY</p>
+
+        <h1>My <span>Rides</span></h1>
+
+        <p>Manage your bookings and keep track of your journeys.</p>
+
+    </section>
+
+    <!-- Booking Summary -->
+    <section class="ride-summary">
+
+        <div class="summary-card">
+            <div class="summary-icon">🚗</div>
+            <div>
+                <h2 id="totalRides">0</h2>
+                <p>Total Rides</p>
+            </div>
+        </div>
+
+        <div class="summary-card">
+            <div class="summary-icon">📅</div>
+            <div>
+                <h2 id="upcomingRides">0</h2>
+                <p>Upcoming Rides</p>
+            </div>
+        </div>
+
+        <div class="summary-card">
+            <div class="summary-icon">✓</div>
+            <div>
+                <h2 id="completedRides">0</h2>
+                <p>Completed Rides</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Ride Categories -->
+    <section class="my-rides-content">
+
+        <div class="ride-tabs">
+
+            <button class="ride-tab active" type="button"
+                onclick="showRideCategory('upcoming')">
+                Upcoming
+            </button>
+
+            <button class="ride-tab" type="button"
+                onclick="showRideCategory('completed')">
+                Completed
+            </button>
+
+            <button class="ride-tab" type="button"
+                onclick="showRideCategory('cancelled')">
+                Cancelled
+            </button>
+
+        </div>
+
+        <!-- Loading Message -->
+        <p id="loadingMessage" style="text-align:center;">
+            Loading your bookings...
+        </p>
+
+        <!-- Upcoming Rides -->
+        <div class="ride-category" id="upcomingCategory">
+
+            <h2>Upcoming Rides</h2>
+
+            <div id="upcomingBookings"></div>
+
+        </div>
+
+        <!-- Completed Rides -->
+        <div class="ride-category" id="completedCategory"
+            style="display:none;">
+
+            <h2>Completed Rides</h2>
+
+            <div id="completedBookings"></div>
+
+        </div>
+
+        <!-- Cancelled Rides -->
+        <div class="ride-category" id="cancelledCategory"
+            style="display:none;">
+
+            <h2>Cancelled Rides</h2>
+
+            <div id="cancelledBookings"></div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="my-rides-footer">
+        <p>© 2026 Routivaa. All Rights Reserved.</p>
+    </footer>
+
+    <script src="Js/script.js"></script>
+
+</body>
+</html>

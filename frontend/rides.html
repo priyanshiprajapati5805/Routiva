@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Rides - Routivaa</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <a href="index.html" class="subscription-brand">
+            <img src="images/Routiva Road Loop Logo.png"
+                 alt="Routivaa Logo"
+                 class="logo">
+        </a>
+
+        <div class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html">Find a Ride</a></li>
+            <li><a href="subscription.html">Subscriptions</a></li>
+            <li><a href="my-rides.html">My Rides</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </div>
+        <div class="profile-avatar">
+        <img src="https://img.magnific.com/premium-vector/young-man-avatar-character-due-avatar-man-vector-icon-cartoon-illustration_1186924-4438.jpg?semt=ais_hybrid&w=740&q=80" alt="User Avatar"
+        class="profile-avatar">
+        </div>
+    </nav>
+
+    <!-- Available Rides Section -->
+    <section class="available-section">
+
+        <div class="available-heading">
+            <h1>Available Rides</h1>
+            <p>Choose a ride that matches your journey.</p>
+        </div>
+
+        <!-- Search Details -->
+        <div class="route-summary">
+
+            <div>
+                <span>FROM</span>
+                <h3 id="displayFrom">-</h3>
+            </div>
+
+            <div class="route-arrow">→</div>
+
+            <div>
+                <span>TO</span>
+                <h3 id="displayTo">-</h3>
+            </div>
+
+            <div>
+                <span>DATE</span>
+                <h3 id="displayDate">-</h3>
+            </div>
+
+            <div>
+                <span>SEATS</span>
+                <h3 id="displaySeats">-</h3>
+            </div>
+
+        </div>
+
+        <!-- Dynamic Backend Rides -->
+        <div class="rides-list" id="ridesList">
+
+            <p id="ridesLoading">
+                Searching available rides...
+            </p>
+
+        </div>
+
+        <!-- Back Button -->
+        <a href="search.html" class="back-home">
+            ← Search Another Ride
+        </a>
+
+    </section>
+
+    <script src="Js/script.js"></script>
+
+</body>
+</html>

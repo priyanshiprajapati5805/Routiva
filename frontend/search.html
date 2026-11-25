@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Ride - RideLoop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-page">
+
+    <div class="login-container search-container">
+
+        <a href="index.html" class="subscription-brand">
+            <img src="images/Routiva Road Loop Logo.png" alt="Routiva Logo" class="logol">
+        </a>
+
+        <h1>Find Your Ride</h1>
+        <p class="login-subtitle">
+            Search for affordable rides and travel together.
+        </p>
+
+        <form id="searchRideForm">
+
+            <div class="form-group">
+                <label for="from">From</label>
+                <input type="text" id="from"
+                    placeholder="Enter starting location" required>
+            </div>
+
+            <div class="form-group">
+                <label for="to">To</label>
+                <input type="text" id="to"
+                    placeholder="Enter destination" required>
+            </div>
+
+            <div class="form-group">
+                <label for="travelDate">Travel Date</label>
+                <input type="date" id="travelDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="seats">Number of Seats</label>
+                <select id="seats" required>
+                    <option value="">Select seats</option>
+                    <option value="1">1 Seat</option>
+                    <option value="2">2 Seats</option>
+                    <option value="3">3 Seats</option>
+                    <option value="4">4 Seats</option>
+                </select>
+            </div>
+
+            <button type="submit" class="login-submit">
+                Search Rides
+            </button>
+
+        </form>
+
+        <a href="index.html" class="back-home">
+            ← Back to Home
+        </a>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
